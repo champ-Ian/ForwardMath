@@ -1,0 +1,171 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+:root {
+    --black-color: #23383F;
+    --dark-color: #01455E;
+    --primary-dark-color: #2F778B;
+    --primary-color: #83AFBC;
+    --light-color: #a9b9d5;
+    --white-color: #CDD2D2;
+    --gray-color: #A9B0B1;
+}
+
+/* Navbar */
+.navbar{
+    display:flex;
+    background: var(--primary-color);
+    justify-content: space-between;
+    padding: 10px;
+}
+.logo{
+    width: 30%;
+}
+.open{
+    background: none;
+    border: none;
+    margin: 15px;
+    font-size: 1.4rem;
+}
+.open:hover{
+    cursor: pointer;
+    transition-duration: 0.6s;
+    color: var(--primary-dark-color);
+}
+.main-menu{
+    position: fixed;
+    right: 0px;
+    top: 0px;
+    background: var(--light-color);
+    height: 100%;
+    width: 200px;
+    display: none;
+    z-index: 1;
+}
+.close{
+    background: none;
+    border: none;
+    float: right;
+    margin: 35px 25px 15px;
+    font-size: 1.8rem;
+}
+.close:hover{
+    cursor: pointer;
+    transition-duration: 0.6s;
+    color: var(--primary-dark-color);
+}
+.links{
+    float: left;
+    display: flex;
+    flex-direction: column;
+}
+.links a {
+    font-size: 1.3rem;
+    margin: 5px 30px 15px;
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--black-color);
+}
+.links a:hover{
+    transition-duration: 0.6s;
+    color: var(--primary-dark-color);
+}
+
+/* Modes */
+.modes{
+    margin: 20px auto 20px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+.main-card{
+    background-color: var(--primary-dark-color);
+    border-radius: 10px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+.mainLine{
+    border: 1px solid black;
+    width: 90px;
+    margin: 0px 5px 10px;
+}
+.main-card h1{
+    font-size: 1.4rem;
+    font-weight: normal;
+}
+.main-card p{
+    font-size: 0.9rem;
+    font-weight: light;
+    margin-left: 10px;
+}
+.main-card a{
+    margin: 10px 10px 0px;
+    align-self: end;
+    font-size: 1.6rem;
+    color: var(--light-color)
+}
+.main-card a:hover{
+    color: var(--white-color)
+}
+.otherCards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.card{
+    border-radius: 10px;
+    padding: 15px;
+    background-color: var(--primary-color);
+    margin: 10px;
+    width: 43%;
+    display: flex;
+    flex-direction: column;
+}
+.card h1{
+    font-size: 1.2rem;
+    font-weight: normal;
+    align-self: center;
+}
+.line{
+    border: 1px solid black;
+    width: 50px;
+    margin: 0px auto 10px;
+}
+.card p{
+    font-size: 0.8rem;
+    font-weight: light;
+}
+.card a{
+    margin: 10px 10px 0px;
+    align-self: end;
+    color: var(--black-color);
+    font-size: 1.2rem;
+}
+.card a:hover{
+    color: var(--primary-dark-color-color)
+}
+
+/* Breakpoints */
+@media only screen and (min-width: 600px) {
+}
+
+@media only screen and (min-width: 768px) {
+}
+
+@media only screen and (min-width: 992px) {
+}
+
+@media only screen and (min-width: 1200px) {
+}

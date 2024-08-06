@@ -1,0 +1,262 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+:root {
+    --black-color: #23383F;
+    --dark-color: #01455E;
+    --primary-dark-color: #2F778B;
+    --primary-color: #83AFBC;
+    --light-color: #a9b9d5;
+    --white-color: #CDD2D2;
+    --gray-color: #A9B0B1;
+}
+
+/* Navbar */
+.navbar{
+    display:flex;
+    background: var(--primary-color);
+    justify-content: space-between;
+    padding: 10px;
+}
+.logo{
+    width: 30%;
+}
+.open{
+    background: none;
+    border: none;
+    margin: 15px;
+    font-size: 1.4rem;
+}
+.open:hover{
+    cursor: pointer;
+    transition-duration: 0.6s;
+    color: var(--primary-dark-color);
+}
+.main-menu{
+    position: fixed;
+    right: 0px;
+    top: 0px;
+    background: var(--light-color);
+    height: 100%;
+    width: 200px;
+    display: none;
+    z-index: 1;
+}
+.close{
+    background: none;
+    border: none;
+    float: right;
+    margin: 35px 25px 15px;
+    font-size: 1.8rem;
+}
+.close:hover{
+    cursor: pointer;
+    transition-duration: 0.6s;
+    color: var(--primary-dark-color);
+}
+.links{
+    float: left;
+    display: flex;
+    flex-direction: column;
+}
+.links a {
+    font-size: 1.3rem;
+    margin: 5px 30px 15px;
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--black-color);
+}
+.links a:hover{
+    transition-duration: 0.6s;
+    color: var(--primary-dark-color);
+}
+
+/* Geometry */
+.geometry {
+    background: var(--light-color);
+    width: 90%;
+    margin: 40px auto 0px;
+    padding: 10px 20px 10px;
+    border-radius: 20px;
+}
+
+.geometryButton {
+    background: var(--light-color);
+    border: none;
+    padding-left: 10px;
+    font-size: 1.3rem;
+}
+
+.geometryButton:hover {
+    cursor: pointer;
+}
+
+.geometry-head {
+    display: flex;
+    justify-content: space-between;
+}
+
+.geometry img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.geometry-sections div h4 {
+    font-size: 1rem;
+}
+
+.geometry-sections div div {
+    font-size: 0.8rem;
+}
+
+.geometry-sections div {
+    padding: 10px;
+}
+
+
+/* Number Theory */
+.number-theory {
+    background: var(--light-color);
+    width: 90%;
+    margin: 40px auto 0px;
+    padding: 10px 20px 10px;
+    border-radius: 20px;
+}
+
+.number-theoryButton {
+    background: var(--light-color);
+    border: none;
+    font-size: 1.3rem;
+}
+
+.number-theoryButton:hover {
+    cursor: pointer;
+}
+
+.number-theory-head {
+    display: flex;
+    justify-content: space-between;
+}
+
+.number-theory img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.number-theory-sections div h4 {
+    font-size: 1rem;
+}
+
+.number-theory-sections div div {
+    font-size: 0.8rem;
+}
+
+.number-theory-sections div {
+    padding: 10px;
+}
+
+
+/* Algebra */
+.algebra {
+    background: var(--light-color);
+    width: 90%;
+    margin: 40px auto 0px;
+    padding: 10px 20px 10px;
+    border-radius: 20px;
+}
+
+.algebraButton {
+    background: var(--light-color);
+    border: none;
+    font-size: 1.3rem;
+}
+
+.algebraButton:hover {
+    cursor: pointer;
+}
+
+.algebra-head {
+    display: flex;
+    justify-content: space-between;
+}
+
+.algebra img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.algebra-sections div h4 {
+    font-size: 1rem;
+}
+
+.algebra-sections div div {
+    font-size: 0.8rem;
+}
+
+.algebra-sections div {
+    padding: 10px;
+}
+
+/* Counting and Probalility */
+.CandP {
+    background: var(--light-color);
+    width: 90%;
+    margin: 40px auto 0px;
+    padding: 10px 20px 10px;
+    border-radius: 20px;
+}
+
+.CandPButton {
+    background: var(--light-color);
+    border: none;
+    font-size: 1.3rem;
+}
+
+.CandPButton:hover {
+    cursor: pointer;
+}
+
+.CandP-head {
+    display: flex;
+    justify-content: space-between;
+}
+
+.CandP img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.CandP-sections div h4 {
+    font-size: 1rem;
+}
+
+.CandP-sections div div {
+    font-size: 0.8rem;
+}
+
+.CandP-sections div {
+    padding: 10px;
+}
+
+
+/* Breakpoints */
+@media only screen and (min-width: 600px) {
+}
+
+@media only screen and (min-width: 768px) {
+}
+
+@media only screen and (min-width: 992px) {
+}
+
+@media only screen and (min-width: 1200px) {
+}

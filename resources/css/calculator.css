@@ -1,0 +1,224 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+:root {
+    --black-color: #23383F;
+    --dark-color: #01455E;
+    --primary-dark-color: #2F778B;
+    --primary-color: #83AFBC;
+    --light-color: #a9b9d5;
+    --white-color: #CDD2D2;
+    --gray-color: #A9B0B1;
+}
+
+/* Navbar */
+.navbar{
+    display:flex;
+    background: var(--primary-color);
+    justify-content: space-between;
+    padding: 10px;
+}
+.logo{
+    width: 30%;
+}
+.open{
+    background: none;
+    border: none;
+    margin: 15px;
+    font-size: 1.4rem;
+}
+.open:hover{
+    cursor: pointer;
+    transition-duration: 0.6s;
+    color: var(--primary-dark-color);
+}
+.main-menu{
+    position: fixed;
+    right: 0px;
+    top: 0px;
+    background: var(--light-color);
+    height: 100%;
+    width: 200px;
+    display: none;
+    z-index: 1;
+}
+.close{
+    background: none;
+    border: none;
+    float: right;
+    margin: 35px 25px 15px;
+    font-size: 1.8rem;
+}
+.close:hover{
+    cursor: pointer;
+    transition-duration: 0.6s;
+    color: var(--primary-dark-color);
+}
+.links{
+    float: left;
+    display: flex;
+    flex-direction: column;
+}
+.links a {
+    font-size: 1.3rem;
+    margin: 5px 30px 15px;
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--black-color);
+}
+.links a:hover{
+    transition-duration: 0.6s;
+    color: var(--primary-dark-color);
+}
+
+/* Calculator Input */
+.calculator{
+    margin: 30px auto 30px;
+    background-color: var(--white-color);
+    padding: 40px 30px 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+    width: 300px;
+}
+
+.firstValue{
+    margin: 20px;
+    width: 90%;
+    height: 60px;
+    font-size: 2rem;
+    border-radius: 10px;
+    border: 2px solid black;
+    padding: 10px;
+}
+
+.operation{
+    margin: 20px;
+    width: 90%;
+    height: 60px;
+    font-size: 1rem;
+    border-radius: 10px;
+    border: 2px solid black;
+    padding: 10px;
+}
+
+.secondValue{
+    margin: 20px;
+    width: 90%;
+    height: 60px;
+    font-size: 2rem;
+    border-radius: 10px;
+    border: 2px solid black;
+    padding: 10px;
+}
+
+.calculate-button {
+    width: 80%;
+    height: 60px;
+    background: var(--primary-color);
+    border-radius: 10px;
+    font-size: 1.5rem;
+    font-weight: normal;
+    display: block;
+    margin: 20px auto 0px;
+    text-decoration: none;
+    color: var(--black-color);
+    border: none;
+}
+
+.calculate-button:hover {
+    transition-duration: 0.7s;
+    background-color: var(--dark-color)
+}
+
+.calculatorOutput{
+    border-radius: 20px;
+    background-color: var(--white-color);
+    width: 300px;
+    margin: 0px auto 20px;
+    padding: 20px;
+}
+
+.outputHeading {
+    font-size: 1rem;
+}
+
+.outputBox{
+    border: 2px solid black;
+    width: 90%;
+    margin: 10px auto 0px;
+    height: 70px;
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+/* Popup */
+.popup {
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+    display: none;
+}
+
+.popup-content {
+    border-radius: 20px;
+    background-color: var(--white-color);
+    height: auto;
+    margin: 50% auto;
+    padding: 20px;
+    border: 3px solid var(--black-color);
+    width: 80%;
+    font-weight: bold;
+}
+
+.popup-text {
+    font-size: 2rem;
+    margin: 20px;
+    color: var(--black-color);
+}
+
+.popup-content button {
+    display: block;
+    margin: 0 auto;
+    font-size: 1.8rem;
+    font-weight: normal;
+    border: 3px solid var(--black-color);
+    background: var(--light-color);
+    border-radius: 15px;
+    padding: 10px 15px;
+    box-shadow: 3px 3px 3px var(--black-color);
+
+}
+.show {
+    display: block;
+}
+
+/* Breakpoints */
+@media only screen and (min-width: 600px) {
+}
+
+@media only screen and (min-width: 768px) {
+}
+
+@media only screen and (min-width: 992px) {
+}
+
+@media only screen and (min-width: 1200px) {
+}

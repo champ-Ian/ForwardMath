@@ -1,0 +1,143 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+:root {
+    --black-color: #23383F;
+    --dark-color: #01455E;
+    --primary-dark-color: #2F778B;
+    --primary-color: #83AFBC;
+    --light-color: #a9b9d5;
+    --white-color: #CDD2D2;
+    --gray-color: #A9B0B1;
+}
+
+/* Navbar */
+.navbar{
+    display:flex;
+    background: var(--primary-color);
+    justify-content: space-between;
+    padding: 10px;
+}
+.logo{
+    width: 30%;
+}
+.open{
+    background: none;
+    border: none;
+    margin: 15px;
+    font-size: 1.4rem;
+}
+.open:hover{
+    cursor: pointer;
+    transition-duration: 0.6s;
+    color: var(--primary-dark-color);
+}
+.main-menu{
+    position: fixed;
+    right: 0px;
+    top: 0px;
+    background: var(--light-color);
+    height: 100%;
+    width: 200px;
+    display: none;
+    z-index: 1;
+}
+.close{
+    background: none;
+    border: none;
+    float: right;
+    margin: 35px 25px 15px;
+    font-size: 1.8rem;
+}
+.close:hover{
+    cursor: pointer;
+    transition-duration: 0.6s;
+    color: var(--primary-dark-color);
+}
+.links{
+    float: left;
+    display: flex;
+    flex-direction: column;
+}
+.links a {
+    font-size: 1.3rem;
+    margin: 5px 30px 15px;
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--black-color);
+}
+.links a:hover{
+    transition-duration: 0.6s;
+    color: var(--primary-dark-color);
+}
+
+/* Quizzes */
+.quizzes{
+    display: flex;
+    flex-direction: column;
+}
+
+.card{
+    background: var(--light-color);
+    border: 2px solid var(--black-color);
+    width: 80%;
+    margin: 40px auto 10px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.heading{
+    margin: 10px 20px 10px;
+    background: var(--dark-color);
+    display: block;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 1rem;
+    text-decoration: none;
+    color: var(--white-color);
+}
+
+.heading:hover{
+    background-color: var(--black-color);
+    transition-duration: 0.6s;
+}
+
+.image{
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.text{
+    font-size: 1rem;
+    margin: 0px 30px 20px;
+}
+
+.message{
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: normal;
+    margin: 20px auto 20px;
+}
+
+/* Breakpoints */
+@media only screen and (min-width: 600px) {
+}
+
+@media only screen and (min-width: 768px) {
+}
+
+@media only screen and (min-width: 992px) {
+}
+
+@media only screen and (min-width: 1200px) {
+}

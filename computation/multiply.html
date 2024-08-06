@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-HZHV3MZBRF"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-HZHV3MZBRF');
+    </script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="We've curated AMC-style questions, gathered usefull resources, 
+    and even made a fun computation practice game. Get ready to conquer those math battles!" />
+
+    <title>Forward Math | Multiply</title>
+
+    <link rel="icon" href="../img/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/multiply.css">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <script src="js/multiply.js"></script>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div>
+            <a href="../index.html">
+                <img src="../img/logo.png" alt="logo" class="logo">
+            </a>
+        </div>
+        <button class="open" onclick="openNav()">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+        <div class="main-menu">
+            <button class="close" onclick="closeNav()">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            <div class="links">
+                <a href="../quizzes/index.html">Quizzes</a>
+                <a href="../amc/index.html">AMC Practice</a>
+                <a href="index.html">Computation Practice</a>
+                <a href="../resources/index.html">Resources</a>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Stats -->
+    <section class="full-stats">
+        <button class="start" type="button" onclick="start()"> 
+            START
+        </button>
+        <span class="stats">
+            <div class="clock">
+                Time: 00:30
+            </div>
+            <div class="curScore">
+                Score: 0
+            </div>
+            <div class="speed">
+                Speed: N/A
+            </div>
+        </span>
+    </section>
+    
+    <!-- Question-Box -->
+    <section class="question-box">
+        <div class="operation"></div>
+        <div class="values">
+            <div class="first-value"></div>
+            <div class="second-value"></div>
+        </div>
+        <div class="operation-line"></div>
+        <input type="text" inputmode="numberic" class="input-form" oninput="typing()"/>
+    </section>
+
+    <!-- End Screen -->
+    <section class="end-screen">
+        <div class="message-card">
+            <div class="message"></div>
+            <div class="results">
+                <div class="score"></div>
+            </div>
+            <div class="buttons">
+                <a href="index.html">Home</a>
+                <a href="combined.html">Retry</a>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
